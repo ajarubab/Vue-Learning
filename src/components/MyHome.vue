@@ -1,7 +1,8 @@
 <template>
 
     <h1>My Home Component : The Parent Home</h1>
-    <h2>{{ count }}</h2>
+    <h1>{{ msg }}</h1>
+    <!-- <h2>{{ count }}</h2>
     <input type="number" v-model="count" />
     <button v-on:click="incCount()">increase</button>
     <button v-on:click="decCount()">decrease</button>
@@ -34,11 +35,11 @@
     <input type="radio" value="student" name="who" id="student" v-model="who">
     <label for="developer">Developer</label>
     <input type="radio" value="developer" name="who" id="developer" v-model="who">
-    <h2>I am a {{ who }}</h2>
+    <h2>I am a {{ who }}</h2> -->
 
 
 
-    <MySecondHome 
+    <!-- <MySecondHome 
         jaiKara="Jai Shree Ram" 
         :details="userDetails[0]" 
         :clickFunc="clickEvent1" 
@@ -46,15 +47,18 @@
         :getMyName="getTheName"
     />
 
-    <div v-html="tag"></div>
+    <div v-html="tag"></div> -->
 </template>
 
 <script>
-import MySecondHome from './MySecondHome.vue';
+// import MySecondHome from './MySecondHome.vue';
 export default {
     name: 'MyHome',
+    props:{
+        msg:String
+    },
     components: {
-        MySecondHome
+        // MySecondHome
     },
     data() {
         return {

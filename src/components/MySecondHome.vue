@@ -1,7 +1,7 @@
 <template>
     <h1>The Second Home : Child Component</h1>
-
-    <h1 v-if="isSecondHome">My Second Home</h1>
+    <h1>{{ msg }}</h1>
+    <!-- <h1 v-if="isSecondHome">My Second Home</h1>
 
     <h1 v-if="isRed" style="color: red;">Red Light</h1>
     <h1 v-else style="color: green;">Green Light</h1>
@@ -33,7 +33,7 @@
     <button v-on:click="isOn = !isOn">ON/OFF</button>
 
     <h2 :class="multiFavour">class binded favours.</h2>
-    <button v-on:click="applyStyles">Lit Me Up</button>
+    <button v-on:click="applyStyles">Lit Me Up</button> -->
 
 </template>
 
@@ -46,6 +46,7 @@ export default {
         clickFunc: Function,
         theData: Array,
         getMyName: Function,
+        msg:String,
     },
     data() {
         return {
