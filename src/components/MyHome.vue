@@ -46,6 +46,7 @@
         :getMyName="getTheName"
     />
 
+    <div v-html="tag"></div>
 </template>
 
 <script>
@@ -79,6 +80,7 @@ export default {
                 { name: "rajat", email: "rajat@abc.com" },
                 { name: "rajan", email: "rajan@abc.com" },
             ],
+            tag: "<h1>This is H1 Tag.</h1>"
         }
     },
     methods: {

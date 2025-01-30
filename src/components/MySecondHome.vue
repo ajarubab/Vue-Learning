@@ -28,6 +28,13 @@
             </li>
         </ul>
     </div>
+
+    <h1 class="otherclass" :class="{ light: isOn }">Light</h1>
+    <button v-on:click="isOn = !isOn">ON/OFF</button>
+
+    <h2 :class="multiFavour">class binded favours.</h2>
+    <button v-on:click="applyStyles">Lit Me Up</button>
+
 </template>
 
 <script>
@@ -45,6 +52,26 @@ export default {
             isSecondHome: true,
             isRed: false,
             technology: ['Java', 'Php', 'Node', 'Laravel'],
+            isOn: true,
+            lighten: false,
+            isItalic: false,
+            bigFont: false,
+        }
+    },
+    computed: {
+        multiFavour() {
+            return {
+                isItalic: this.isItalic,
+                bigFont: this.bigFont,
+                light: this.lighten
+            };
+        }
+    },
+    methods: {
+        applyStyles() {
+            this.lighten = !this.lighten,
+                this.isItalic = !this.isItalic,
+                this.bigFont = !this.bigFont
         }
     }
 
@@ -59,10 +86,25 @@ h2 {
     color: red;
 }
 
+.light {
+    background-color: red;
+    color: yellow;
+    width: 200px;
+}
+
 .info {
     background-color: lightgoldenrodyellow;
     border-bottom: 2px solid black;
     margin-bottom: 20px;
     padding: 10x;
+    width: 200px;
+}
+
+.isItalic {
+    font-style: italic;
+}
+
+.bigFont {
+    font-size: 22px;
 }
 </style>
