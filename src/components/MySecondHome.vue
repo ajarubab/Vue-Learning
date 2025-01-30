@@ -1,6 +1,6 @@
 <template>
     <h1>The Second Home : Child Component</h1>
-    <h1>{{ msg }}</h1>
+    <h1>I am an {{ msg }} in Russia.</h1>
     <!-- <h1 v-if="isSecondHome">My Second Home</h1>
 
     <h1 v-if="isRed" style="color: red;">Red Light</h1>

@@ -3,8 +3,8 @@
     <h2>{{ msg }}</h2>
     <h1>The Helloworld component</h1>
   </div>
-  <MyHome msg="msg to MyHome.vue from Helloworld.vue using props" />
-  <MySecondHome msg="msg to MySecondHome.vue from Helloworld.vue using props" />
+  <MyHome :msg="citizen" />
+  <MySecondHome :msg="citizen" />
 </template>
 
 <script>
@@ -19,6 +19,11 @@ export default {
   },
   props: {
     msg: String
+  },
+  data(){
+    return{
+      citizen : "Indian"
+    }
   }
 }
 </script>

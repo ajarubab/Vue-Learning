@@ -1,7 +1,7 @@
 <template>
 
     <h1>My Home Component : The Parent Home</h1>
-    <h1>{{ msg }}</h1>
+    <h1>I am an {{ msg }} in USA.</h1>
     <!-- <h2>{{ count }}</h2>
     <input type="number" v-model="count" />
     <button v-on:click="incCount()">increase</button>
