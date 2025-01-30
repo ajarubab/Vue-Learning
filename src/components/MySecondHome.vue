@@ -1,6 +1,8 @@
 <template>
     <h1>The Second Home : Child Component</h1>
     <h1>I am an {{ msg }} in Russia.</h1>
+    <MyThirdHome msgToThirdHome="Hello from Second Home" :getThirdHomeMsg="getMsgFromThirdHome"/>
+    <h1>{{ msgFromThird }}</h1>
     <!-- <h1 v-if="isSecondHome">My Second Home</h1>
 
     <h1 v-if="isRed" style="color: red;">Red Light</h1>
@@ -38,15 +40,20 @@
 </template>
 
 <script>
+import MyThirdHome from './MyThirdHome.vue';
+
 export default {
     name: 'MySecondHome',
+    components: {
+        MyThirdHome,
+    },
     props: {
         jaiKara: String,
         details: Object,
         clickFunc: Function,
         theData: Array,
         getMyName: Function,
-        msg:String,
+        msg: String,
     },
     data() {
         return {
@@ -57,6 +64,7 @@ export default {
             lighten: false,
             isItalic: false,
             bigFont: false,
+            msgFromThird: ""
         }
     },
     computed: {
@@ -73,13 +81,17 @@ export default {
             this.lighten = !this.lighten,
                 this.isItalic = !this.isItalic,
                 this.bigFont = !this.bigFont
+        },
+        getMsgFromThirdHome(msg)
+        {
+            this.msgFromThird = msg
         }
     }
 
 }
 </script>
 <style scoped>
-h1 {
+h1{
     color: magenta;
 }
 
