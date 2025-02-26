@@ -1,8 +1,9 @@
 <template>
     <h1>The Second Home : Child Component</h1>
     <h1>I am an {{ msg }} in Russia.</h1>
+    <!-- <h1> Working Above MyThirdHome {{ msgFromThird }}</h1>     -->
     <MyThirdHome msgToThirdHome="Hello from Second Home" :getThirdHomeMsg="getMsgFromThirdHome"/>
-    <h1>{{ msgFromThird }}</h1>
+    <h1> Msg from Third Home :  {{ msgFromThird }}</h1>    
     <!-- <h1 v-if="isSecondHome">My Second Home</h1>
 
     <h1 v-if="isRed" style="color: red;">Red Light</h1>
@@ -36,16 +37,18 @@
 
     <h2 :class="multiFavour">class binded favours.</h2>
     <button v-on:click="applyStyles">Lit Me Up</button> -->
-
+<MyFourthHome someData="Some data to 4th Home from 2nd Home" id="raja-babu-001" name="raja"/>
 </template>
 
 <script>
+import MyFourthHome from './MyFourthHome.vue';
 import MyThirdHome from './MyThirdHome.vue';
 
 export default {
     name: 'MySecondHome',
     components: {
         MyThirdHome,
+        MyFourthHome
     },
     props: {
         jaiKara: String,
@@ -84,6 +87,7 @@ export default {
         },
         getMsgFromThirdHome(msg)
         {
+            alert(msg)
             this.msgFromThird = msg
         }
     }

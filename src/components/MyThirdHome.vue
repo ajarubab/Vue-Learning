@@ -1,9 +1,9 @@
 <template>
     <h1>My Third Home</h1>
-    <h2>{{ msgToThirdHome }}</h2>
-    <button v-on:click="getThirdHomeMsg(msgToSecongHome)">Send Msg to Second Home</button>
-    <br><br>
+    <h2>Msg From Second Home is : {{ msgToThirdHome }}</h2>
+    <button v-on:click="getThirdHomeMsg(msgToSecongHome)">Click to Get Msg From 3rd Home to 2nd Home </button>
     <br>
+    <!-- <br>
     <button v-on:click="getdata1">Click me to type in Red alphabets</button>
     <br>
     <button v-on:click="getdata2">Click me to type in Blue alphabets</button>
@@ -63,9 +63,10 @@
     <input type="number" v-model.number.lazy="data3" />
     <h2>Data is number.lazy modifier: {{ data3 }}</h2>
     <h2>Datatype is : {{ typeof(data3) }}</h2>
-    <h3>------------------------------------------------</h3>
+    <h3>------------------------------------------------</h3> -->
 </template>
 <script>
+
 export default {
     name: "MyThirdHome",
     props: {
