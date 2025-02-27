@@ -1,6 +1,6 @@
 <template>
     <h1>My Fourth Home</h1>
-    <h2>Use of Non-Props for Data Passing</h2>
+    <!-- <h2>Use of Non-Props for Data Passing</h2>
     <h3>{{ someData }}</h3>
     <div v-bind="$attrs">
         <h2>Apple</h2>
@@ -19,7 +19,9 @@
     <h1>Body Temperature : {{ BT.toFixed(1) }}</h1>
     <button v-on:click="BT = BT + 0.5"> + </button>
     <br>
-    <button v-on:click="BT= BT - 0.5" > - </button>
+    <button v-on:click="BT= BT - 0.5" > - </button> -->
+    <h2>------------------------ Use of slots ----------------------------------<br></h2>
+    <slot>Default Message<h1> when nothing is passes on component calling</h1></slot>
 </template>
 <script>
 export default {

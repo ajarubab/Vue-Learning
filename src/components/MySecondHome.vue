@@ -37,7 +37,14 @@
 
     <h2 :class="multiFavour">class binded favours.</h2>
     <button v-on:click="applyStyles">Lit Me Up</button> -->
-<MyFourthHome someData="Some data to 4th Home from 2nd Home" id="raja-babu-001" name="raja"/>
+<!-- <MyFourthHome someData="Some data to 4th Home from 2nd Home" id="raja-babu-001" name="raja"/> -->
+<MyFourthHome>
+    Normal text paassing<br>
+    <h2>HTML Text h2 size passing</h2>
+    <img src="https://www.successconsciousness.com/blog/wp-content/uploads/rising-sun.jpg" alt="#"/><br>
+    <a href="#">click here </a>
+</MyFourthHome>
+<MyFourthHome></MyFourthHome>
 </template>
 
 <script>
