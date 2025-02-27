@@ -6,9 +6,15 @@
   </div>
   <MyHome :msg="citizen" />
   <MySecondHome :msg="citizen" /> -->
+  <!-- <Teleport to="#footer">
+    <Footer />
+  </Teleport> -->
+
 </template>
 
 <script>
+// import Footer from './footer.vue';
+
 // import MyHome from './MyHome.vue';
 // import MySecondHome from './MySecondHome.vue';
 
@@ -17,6 +23,7 @@ export default {
   components: {
     // MyHome,
     // MySecondHome
+    // Footer
   },
   props: {
     msg: String
