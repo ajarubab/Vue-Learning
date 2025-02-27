@@ -12,7 +12,6 @@
   <button @click="tab = 'MyThirdHome'">Show MyThirdHome Component content</button><br>
   <button @click="tab = 'MyFourthHome'">Show MyFourthHome Component content</button><br>
   <component :is="tab" />
-  <Footer />
 </template>
 
 <script>
@@ -21,7 +20,6 @@ import MyHome from './components/MyHome.vue';
 import MySecondHome from './components/MySecondHome.vue';
 import MyThirdHome from './components/MyThirdHome.vue';
 import MyFourthHome from './components/MyFourthHome.vue';
-import Footer from './components/footer.vue';
 
 export default {
   name: 'App',
@@ -31,7 +29,6 @@ export default {
     MySecondHome,
     MyThirdHome,
     MyFourthHome,
-    Footer
   },
   data() {
     return {

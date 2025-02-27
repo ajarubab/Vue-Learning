@@ -6,14 +6,14 @@
   </div>
   <MyHome :msg="citizen" />
   <MySecondHome :msg="citizen" /> -->
-  <!-- <Teleport to="#footer">
+  <Teleport to="#Pagefooter">
     <Footer />
-  </Teleport> -->
+  </Teleport>
 
 </template>
 
 <script>
-// import Footer from './footer.vue';
+import Footer from './footer.vue';
 
 // import MyHome from './MyHome.vue';
 // import MySecondHome from './MySecondHome.vue';
@@ -23,7 +23,7 @@ export default {
   components: {
     // MyHome,
     // MySecondHome
-    // Footer
+    Footer
   },
   props: {
     msg: String
