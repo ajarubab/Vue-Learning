@@ -1,5 +1,5 @@
 <template>
-    <h1>My Fourth Home</h1>
+    <!-- <h1>My Fourth Home</h1> -->
     <!-- <h2>Use of Non-Props for Data Passing</h2>
     <h3>{{ someData }}</h3>
     <div v-bind="$attrs">
@@ -20,8 +20,19 @@
     <button v-on:click="BT = BT + 0.5"> + </button>
     <br>
     <button v-on:click="BT= BT - 0.5" > - </button> -->
-    <h2>------------------------ Use of slots ----------------------------------<br></h2>
-    <slot>Default Message<h1> when nothing is passes on component calling</h1></slot>
+    <!-- <h2>------------------------ Use of slots ----------------------------------<br></h2>
+    <slot>Default Message<h1> when nothing is passes on component calling</h1></slot> -->
+    <div class="cart">
+        <upari>
+            <slot name="header"></slot>
+        </upari>
+        <beechWala>
+            <slot name="content"></slot>
+        </beechWala>
+        <neechla>
+            <slot name="footer"><button>Get It</button></slot>
+        </neechla>
+    </div>
 </template>
 <script>
 export default {
@@ -67,12 +78,20 @@ export default {
 h1 {
     color: red !important;
 }
-button{
+/* button{
     width: 50px;
     height: 30px;
     border: solid 1px;
     font-size: 25px;
     font-weight: bolder;
     background-color: chartreuse;
+} */
+.cart{
+    border: 1px solid;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 100px;
+    background-color: lightcyan;
 }
 </style>

@@ -38,13 +38,33 @@
     <h2 :class="multiFavour">class binded favours.</h2>
     <button v-on:click="applyStyles">Lit Me Up</button> -->
 <!-- <MyFourthHome someData="Some data to 4th Home from 2nd Home" id="raja-babu-001" name="raja"/> -->
-<MyFourthHome>
+<!-- <MyFourthHome>
     Normal text paassing<br>
     <h2>HTML Text h2 size passing</h2>
     <img src="https://www.successconsciousness.com/blog/wp-content/uploads/rising-sun.jpg" alt="#"/><br>
     <a href="#">click here </a>
 </MyFourthHome>
-<MyFourthHome></MyFourthHome>
+<MyFourthHome></MyFourthHome> -->
+<MyFourthHome>
+        <template v-slot:header>
+            <h1>Apple</h1>
+        </template>
+        <template v-slot:content>
+            <p>A for Apple</p>
+        </template>
+        <template v-slot:footer>
+            <a href="#">Buy Now</a>
+        </template>
+    </MyFourthHome>
+    <MyFourthHome>
+        <template v-slot:header>
+            <h1>Mango</h1>
+        </template>
+        <template v-slot:content>
+            <p>M for Mango</p>
+        </template>
+        <template v-slot:footer></template>
+    </MyFourthHome>
 </template>
 
 <script>
