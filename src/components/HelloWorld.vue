@@ -1,21 +1,22 @@
 <template>
-  <div class="hello">
+  <h1>The Helloworld component</h1>
+  <!-- <div class="hello">
     <h2>{{ msg }}</h2>
     <h1>The Helloworld component</h1>
   </div>
   <MyHome :msg="citizen" />
-  <MySecondHome :msg="citizen" />
+  <MySecondHome :msg="citizen" /> -->
 </template>
 
 <script>
-import MyHome from './MyHome.vue';
-import MySecondHome from './MySecondHome.vue';
+// import MyHome from './MyHome.vue';
+// import MySecondHome from './MySecondHome.vue';
 
 export default {
   name: 'HelloWorld',
   components: {
-    MyHome,
-    MySecondHome
+    // MyHome,
+    // MySecondHome
   },
   props: {
     msg: String

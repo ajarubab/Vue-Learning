@@ -1,8 +1,8 @@
 <template>
     <h1>My Third Home</h1>
-    <h2>Msg From Second Home is : {{ msgToThirdHome }}</h2>
+    <!-- <h2>Msg From Second Home is : {{ msgToThirdHome }}</h2>
     <button v-on:click="getThirdHomeMsg(msgToSecongHome)">Click to Get Msg From 3rd Home to 2nd Home </button>
-    <br>
+    <br> -->
     <!-- <br>
     <button v-on:click="getdata1">Click me to type in Red alphabets</button>
     <br>

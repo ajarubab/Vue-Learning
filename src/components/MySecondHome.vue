@@ -1,9 +1,9 @@
 <template>
-    <h1>The Second Home : Child Component</h1>
-    <h1>I am an {{ msg }} in Russia.</h1>
+    <h1>The Second Home</h1>
+    <!-- <h1>I am an {{ msg }} in Russia.</h1> -->
     <!-- <h1> Working Above MyThirdHome {{ msgFromThird }}</h1>     -->
-    <MyThirdHome msgToThirdHome="Hello from Second Home" :getThirdHomeMsg="getMsgFromThirdHome"/>
-    <h1> Msg from Third Home :  {{ msgFromThird }}</h1>    
+    <!-- <MyThirdHome msgToThirdHome="Hello from Second Home" :getThirdHomeMsg="getMsgFromThirdHome"/> -->
+    <!-- <h1> Msg from Third Home :  {{ msgFromThird }}</h1>     -->
     <!-- <h1 v-if="isSecondHome">My Second Home</h1>
 
     <h1 v-if="isRed" style="color: red;">Red Light</h1>
@@ -68,14 +68,14 @@
 </template>
 
 <script>
-import MyFourthHome from './MyFourthHome.vue';
-import MyThirdHome from './MyThirdHome.vue';
+// import MyFourthHome from './MyFourthHome.vue';
+// import MyThirdHome from './MyThirdHome.vue';
 
 export default {
     name: 'MySecondHome',
     components: {
-        MyThirdHome,
-        MyFourthHome
+        // MyThirdHome,
+        // MyFourthHome
     },
     props: {
         jaiKara: String,
